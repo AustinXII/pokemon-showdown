@@ -462,8 +462,8 @@ export const commands: Chat.ChatCommands = {
 				user.settings.blockPMs === friends;
 				this.sendReply(`You are now allowing your friends to bypass blockpms.`);
 			} else if (this.meansNo(target)) {
-				if (user,settings,blockPMs = false) {
-					return this.errorReply(this.tr`You are not blocking PMs`)
+				if (user.settings.blockPMs = false) {
+					return this.errorReply(this.tr`You are not blocking PMs`);
 				}
 				if (user.settings.blockPMs === true) {
 					return this.errorReply(this.tr`You are not allowing friends to bypass pms already.`);
